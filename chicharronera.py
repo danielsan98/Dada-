@@ -7,18 +7,23 @@ raiz=0
 
 if a != 0:
     negativeB=b*-1
-    d=((math.pow(b, 2)) - (4*a*c))
-    raiz=float(math.sqrt(d))
+    d=float((math.pow(b, 2)) - (4*a*c))
+    
     denominador=2*a
-    if raiz<0:
-            raiz=raiz *-1
+    if d<0:
+            d=d *-1
+            raiz=float(math.sqrt(d))
             print("(",negativeB, " +- ", raiz, "i", ")", " / ", 
             denominador)
     else:
+            raiz=float(math.sqrt(d))
             print("(",negativeB, " +- ", raiz, "i", ")", " / ", 
             denominador)
+
 else:
-        print('a no puede ser 0!')    
+        print("a no puede ser 0!")    
+
+  
 
 
          
