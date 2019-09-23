@@ -1,4 +1,11 @@
-def remover():
+def dejarUnicos(arreglo):
+    arrNew=[]
+    for i in arreglo:
+        if i not in arrNew:
+         arrNew.append(i)
+    return arrNew
+
+def removerTodosRepetidos():
     arr=[9, 3 ,1, 3, 2, 9]
     arrN=[]
     for j in range(0, len(arr)):
@@ -19,7 +26,11 @@ def remover():
     return arrN
 
 def main():
-    print(remover())
+    arr=[9, 3 ,1, 3, 9, 2]
+    print("El arreglo original es: ", arr)
+    print("Eliminando repetidos y dejando solo uno de ellos: ", dejarUnicos(arr))
+    print("Eliminando solamente repetidos: ", removerTodosRepetidos())
+
 
 if __name__ == '__main__':
     main()
