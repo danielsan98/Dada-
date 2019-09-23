@@ -13,11 +13,11 @@ def sumaPares():
     return temp
 
 def cuadradoNones():
-    listaNones=[]
+    listaNueva=[]
     for i in range(0, len(lista)):
         if lista[i]%2 != 0:
-            listaNones.append(math.pow(lista[i],2))
-    return listaNones
+            listaNueva.append(math.pow(lista[i],2))
+    return listaNueva
 
 def main():
     print(sumaPares())
