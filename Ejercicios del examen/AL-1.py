@@ -1,7 +1,6 @@
 def primos(p):
     primos=[]
     noPrimos=[]
-    j=0
     for i in range(2,p):
         if(i%2==0):
             primos.append(i)
